@@ -12,36 +12,20 @@
     <br>
     <br/>
 <body>
-        <input type="text" answer="name" id="number" />
-        <input type="text" answer="name" id="numbertwo" />
-        <input readonly="true" id="result"> </input>
-        <input type="button" value="add up" onclick="add_number()" />
 
-        <br>
-        <br/>
-
-        <input type="text" answer="name" id="numberthree" />
-        <input type="text" answer="name" id="numberfour" />
-        <input readonly="true" id="difference"> </input>
-        <input type="button" value="subtract" onclick="minus_number()" />
-
-            <br>
-            <br/>
-
-            <input type="text" answer="name" id="numberfive" />
-            <input type="text" answer="name" id="numbersix" />
-            <input readonly="true" id="divide"> </input>
-            <input type="button" value="division" onclick="division_number()" />
-
-
-            <br>
-            <br/>
-
-            <input type="text" answer="name" id=numberseven />
-            <input type="text" answer="name" id=numbereight />
-            <input readonly="true" id="multiplication"> </input>
-            <input type="button" value="multiple" onclick="multiple_number()" />
-
-    
-</body>
+    <form name="cal">
+        Enter 1st num:<input type="text" name="num1" /> <br/>
+        Enter 2nd num:<input type-="text" name="num2" /> <br/>
+        Select operation:
+        <select name="-please select-" onchange="calculate(this.value)">
+        <option >-please select-</option>
+        <option value="add">addition</option>
+        <option value="sub">subtraction</option>
+        <option value="mul">multiplication</option>
+        <option value="div">division</option>
+        </select>
+        
+        Result= <input type="text" name="res" />
+        </form>    
+            
 </html>
