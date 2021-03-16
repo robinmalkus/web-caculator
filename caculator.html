@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> Calculator
+    <script src ="caculator.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+</head>
+    <br>
+    <br/>
+<body>
+
+    <form name="cal">
+        Enter 1st num:<input type="text" name="num1" /> <br/>
+        Enter 2nd num:<input type-="text" name="num2" /> <br/>
+        Select operation:
+        <select name="-please select-" onchange="calculate(this.value)">
+        <option >-please select-</option>
+        <option value="add">addition</option>
+        <option value="sub">subtraction</option>
+        <option value="mul">multiplication</option>
+        <option value="div">division</option>
+        </select>
+        
+        Result= <input type="text" name="res" />
+        </form>    
+            
+</html>
